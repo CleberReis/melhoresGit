@@ -18,11 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let main = UIViewController()
-        main.view.backgroundColor = UIColor.groupTableViewBackground
-        main.title = "Melhores do Git"
+        //estilos para navbar
+//        UINavigationBar.appearance().barTintColor = .red
+//        UINavigationBar.appearance().tintColor = UIColor.white
+//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
-        window?.rootViewController = UINavigationController(rootViewController: main)
+        window?.rootViewController = UINavigationController(rootViewController: ListGitTableViewController())
         window?.makeKeyAndVisible()
         
         return true

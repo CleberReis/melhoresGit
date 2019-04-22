@@ -10,6 +10,13 @@
 		BF430068226E11390020746B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF430067226E11390020746B /* AppDelegate.swift */; };
 		BF43006F226E113B0020746B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF43006E226E113B0020746B /* Assets.xcassets */; };
 		BF430072226E113B0020746B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF430070226E113B0020746B /* LaunchScreen.storyboard */; };
+		BF43007A226E14450020746B /* ListGitTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF430079226E14450020746B /* ListGitTableViewController.swift */; };
+		BF43007C226E30780020746B /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF43007B226E30780020746B /* UIImageViewExtension.swift */; };
+		BF430080226E48C00020746B /* DetailGitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF43007F226E48C00020746B /* DetailGitViewController.swift */; };
+		BFFDFA09226E6439005CECF7 /* GitRS.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFDFA08226E6439005CECF7 /* GitRS.swift */; };
+		BFFDFA0B226E6489005CECF7 /* UserGit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFDFA0A226E6489005CECF7 /* UserGit.swift */; };
+		BFFDFA0D226E64BE005CECF7 /* UserDetailGit.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFDFA0C226E64BE005CECF7 /* UserDetailGit.swift */; };
+		BFFDFA11226E661B005CECF7 /* HttpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFDFA10226E661B005CECF7 /* HttpHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +25,13 @@
 		BF43006E226E113B0020746B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF430071226E113B0020746B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF430073226E113B0020746B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF430079226E14450020746B /* ListGitTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListGitTableViewController.swift; sourceTree = "<group>"; };
+		BF43007B226E30780020746B /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		BF43007F226E48C00020746B /* DetailGitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGitViewController.swift; sourceTree = "<group>"; };
+		BFFDFA08226E6439005CECF7 /* GitRS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRS.swift; sourceTree = "<group>"; };
+		BFFDFA0A226E6489005CECF7 /* UserGit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGit.swift; sourceTree = "<group>"; };
+		BFFDFA0C226E64BE005CECF7 /* UserDetailGit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailGit.swift; sourceTree = "<group>"; };
+		BFFDFA10226E661B005CECF7 /* HttpHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +64,59 @@
 		BF430066226E11390020746B /* melhoresGit */ = {
 			isa = PBXGroup;
 			children = (
+				BFFDFA0E226E6570005CECF7 /* Views */,
+				BFFDFA06226E640E005CECF7 /* Core */,
 				BF430067226E11390020746B /* AppDelegate.swift */,
 				BF43006E226E113B0020746B /* Assets.xcassets */,
 				BF430070226E113B0020746B /* LaunchScreen.storyboard */,
 				BF430073226E113B0020746B /* Info.plist */,
 			);
 			path = melhoresGit;
+			sourceTree = "<group>";
+		};
+		BFFDFA05226E4919005CECF7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF43007B226E30780020746B /* UIImageViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BFFDFA06226E640E005CECF7 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				BFFDFA0F226E65F6005CECF7 /* Handler */,
+				BFFDFA05226E4919005CECF7 /* Extensions */,
+				BFFDFA07226E6419005CECF7 /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		BFFDFA07226E6419005CECF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFFDFA08226E6439005CECF7 /* GitRS.swift */,
+				BFFDFA0A226E6489005CECF7 /* UserGit.swift */,
+				BFFDFA0C226E64BE005CECF7 /* UserDetailGit.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BFFDFA0E226E6570005CECF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF43007F226E48C00020746B /* DetailGitViewController.swift */,
+				BF430079226E14450020746B /* ListGitTableViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFFDFA0F226E65F6005CECF7 /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				BFFDFA10226E661B005CECF7 /* HttpHandler.swift */,
+			);
+			path = Handler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +189,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFFDFA09226E6439005CECF7 /* GitRS.swift in Sources */,
+				BF43007A226E14450020746B /* ListGitTableViewController.swift in Sources */,
+				BFFDFA11226E661B005CECF7 /* HttpHandler.swift in Sources */,
+				BFFDFA0D226E64BE005CECF7 /* UserDetailGit.swift in Sources */,
+				BF43007C226E30780020746B /* UIImageViewExtension.swift in Sources */,
+				BF430080226E48C00020746B /* DetailGitViewController.swift in Sources */,
 				BF430068226E11390020746B /* AppDelegate.swift in Sources */,
+				BFFDFA0B226E6489005CECF7 /* UserGit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
